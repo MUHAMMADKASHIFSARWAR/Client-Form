@@ -1,0 +1,59 @@
+   public DataTable ViewADC(string SetToDate, string setFromdate, string ZoneCode, string clientCode,
+            string BranchCode, string ClientType, string branchType,string DeptCode,string busClass,string branchCode)
+        {
+            string constr = System.Configuration.ConfigurationManager.AppSettings["DashBoard"];
+            con = new OracleConnection(constr);
+            DataSet dataset = new DataSet();
+            using (OracleConnection objConn = new OracleConnection(constr))
+            {
+                if (HttpContext.Current.Session["DEPT_CODE"] != null)
+                {
+                    //string dept = HttpContext.Current.Session["DEPT_CODE"].ToString();
+                    //string busclass = HttpContext.Current.Session["BUSSCLASS_CODE"].ToString();
+                    OracleCommand objCmd = new OracleCommand();
+                    objCmd.Connection = objConn;
+                    objCmd.CommandText = "GetADC";
+                    objCmd.CommandType = CommandType.StoredProcedure;
+                    //objCmd.Parameters.Add("dept", OracleDbType.NVarchar2).Value = dept;
+                    //objCmd.Parameters.Add("busclass", OracleDbType.NVarchar2).Value = busclass;
+                    //objCmd.Parameters.Add("setFromdate", OracleDbType.NVarchar2).Value = setFromdate;
+                    //objCmd.Parameters.Add("SetToDate", OracleDbType.NVarchar2).Value = SetToDate;
+                    objCmd.Parameters.Add("ToDate", OracleDbType.NVarchar2).Value = SetToDate;
+                    objCmd.Parameters.Add("FromDate", OracleDbType.NVarchar2).Value = setFromdate;
+                    objCmd.Parameters.Add("clientCode", OracleDbType.NVarchar2).Value = clientCode;
+                    objCmd.Parameters.Add("zonecode", OracleDbType.NVarchar2).Value = ZoneCode;
+                    //objCmd.Parameters.Add("clientType", OracleDbType.NVarchar2).Value = ClientType;
+                    objCmd.Parameters.Add("branchCode", OracleDbType.NVarchar2).Value = BranchCode;
+                    //objCmd.Parameters.Add("branchtype", OracleDbType.NVarchar2).Value = branchType;
+                    objCmd.Parameters.Add("DeptCode", OracleDbType.NVarchar2).Value = DeptCode;
+                    objCmd.Parameters.Add("BusClass", OracleDbType.NVarchar2).Value = busClass;
+                    //objCmd.Parameters.Add("branchCode", OracleDbType.NVarchar2).Value = branchCode;
+                    
+                    objCmd.Parameters.Add("PRC", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+
+
+                    try
+                    {
+                        objConn.Open();
+                        objCmd.ExecuteNonQuery();
+                        OracleDataAdapter da = new OracleDataAdapter(objCmd);
+                        da.Fill(dataset);
+                    }
+
+                    catch (Exception ex)
+
+                    {
+
+                        System.Console.WriteLine("Exception: {0}", ex.ToString());
+
+                    }
+
+                    objConn.Close();
+
+
+                }
+
+                return dataset.Tables[0];
+
+            }
+        }

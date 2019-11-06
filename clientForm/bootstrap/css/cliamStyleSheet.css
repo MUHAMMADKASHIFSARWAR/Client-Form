@@ -1,0 +1,2267 @@
+﻿
+
+/*nav*/
+@media only screen and (min-width: 1024px) {
+
+
+
+
+    body {
+    }
+
+    .header {
+        width: 100%;
+        background-color: white;
+        border-bottom: solid;
+        border-color: green;
+        height: 142px;
+    }
+
+    .logo {
+        display: -webkit-inline-box;
+        width: 10%;
+    }
+
+    .footer {
+        width: 100%;
+        background-color: white;
+        border: solid;
+        border-color: green;
+        height: 120px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+    }
+
+    li {
+        float: left;
+    }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            li a:hover {
+                background-color: #30793a;
+            }
+
+
+
+    .fontshow {
+        display: inline-block;
+        padding-left: 115px;
+    }
+
+        .fontshow li {
+            float: left;
+            margin: 9px;
+        }
+
+    .Searching {
+        display: -webkit-inline-box;
+    }
+
+    .GridHeader {
+        color: Black;
+        border-top: solid;
+        border-top-width: 13px;
+        border-color: green;
+        font-family: "Times New Roman", Times, serif;
+        font-size: large;
+    }
+
+
+    .btn {
+        border: none;
+        outline: none;
+        padding: 5px 16px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+    }
+
+        Style the active class, and buttons on mouse-over .active, .btn:hover {
+            color: black;
+            border-bottom: solid;
+            border-bottom-color: green;
+        }
+
+    .menuBar {
+        display: inline-table;
+        margin-left: 283px;
+        font-family: "Times New Roman", Times, serif;
+        font-size: large;
+    }
+
+        .menuBar li {
+            width: 120px;
+        }
+
+            .menuBar li span {
+                background-color: #969696;
+            }
+
+
+
+
+    .pagination-ys {
+        display: inline-block;
+        padding-left: 0;
+        margin: 20px 0;
+        border-radius: 4px;
+    }
+
+        .pagination-ys table > tbody > tr > td {
+            display: inline;
+        }
+
+            .pagination-ys table > tbody > tr > td > a,
+            .pagination-ys table > tbody > tr > td > span {
+                position: relative;
+                float: left;
+                padding: 8px 12px;
+                line-height: 1.42857143;
+                text-decoration: none;
+                color: green;
+                background-color: #ffffff;
+                border: 1px solid #dddddd;
+                margin-left: -1px;
+            }
+
+            .pagination-ys table > tbody > tr > td > span {
+                position: relative;
+                float: left;
+                padding: 8px 12px;
+                line-height: 1.42857143;
+                text-decoration: none;
+                margin-left: -1px;
+                z-index: 2;
+                color: #aea79f;
+                background-color: #f5f5f5;
+                border-color: #dddddd;
+                cursor: default;
+            }
+
+            .pagination-ys table > tbody > tr > td:first-child > a,
+            .pagination-ys table > tbody > tr > td:first-child > span {
+                margin-left: 0;
+                border-bottom-left-radius: 4px;
+                border-top-left-radius: 4px;
+            }
+
+            .pagination-ys table > tbody > tr > td:last-child > a,
+            .pagination-ys table > tbody > tr > td:last-child > span {
+                border-bottom-right-radius: 4px;
+                border-top-right-radius: 4px;
+            }
+
+            .pagination-ys table > tbody > tr > td > a:hover,
+            .pagination-ys table > tbody > tr > td > span:hover,
+            .pagination-ys table > tbody > tr > td > a:focus,
+            .pagination-ys table > tbody > tr > td > span:focus {
+                color: #97310e;
+                background-color: #eeeeee;
+                border-color: #dddddd;
+            }
+
+
+    .Background {
+        background-color: Black;
+        filter: alpha(opacity=90);
+        opacity: 0.8;
+    }
+
+    .Popup {
+        background-color: #FFFFFF;
+        border-width: 3px;
+        border-style: solid;
+        border-color: black;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        width: 900px;
+        height: 500px;
+    }
+
+    .lbl {
+        font-size: 16px;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .GridShow {
+        margin-left: 10px;
+    }
+
+    .GridPager a, .GridPager span {
+        display: block;
+        height: 24px;
+        width: 24px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .GridPager a {
+        background-color: #f5f5f5;
+        color: #969696;
+        border: 1px solid #969696;
+    }
+
+    .GridPager span {
+        background-color: #81d374;
+        color: #000;
+        border: 1px solid #3AC0F2;
+    }
+
+    .h1 {
+        font-size: x-large;
+        text-decoration: none;
+        font-style: italic;
+    }
+
+    .SearchBy {
+        font-family: "Times New Roman", Times, serif;
+        font-size: large;
+    }
+
+    Home StyleSheet Start .Dashboard {
+    }
+
+    .Dashboard h1 {
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 42px;
+        font-size: x-large;
+        color: black;
+    }
+
+    .NoOfInttimation {
+        background-color: #1e90ff;
+        width: 318px;
+        height: 120px;
+        display: inline-block;
+        margin-left: 115px;
+        border: solid;
+        border-color: #dddddd;
+        border-radius: 15px;
+    }
+
+    .TurnArroundTime {
+        background-color: #1e90ff;
+        width: 318px;
+        height: 120px;
+        display: inline-block;
+        border: solid;
+        border-color: #dddddd;
+        border-radius: 15px;
+    }
+
+    .SattlementYear {
+        background-color: #1e90ff;
+        width: 318px;
+        height: 120px;
+        display: inline-block;
+        margin-left: -114px;
+        border-radius: 15px;
+        border: solid;
+        border-color: #dddddd;
+    }
+
+    .divSpace {
+        width: 100%;
+        margin-top: -17px;
+    }
+
+    .Amount {
+        background-color: #1e90ff;
+        width: 318px;
+        height: 120px;
+        display: inline-block;
+        margin-left: 147px;
+        border-radius: 15px;
+        border: solid;
+        border-color: #dddddd;
+    }
+
+    .OutstandingClaim {
+        border-radius: 15px;
+        background: #1e90ff;
+        display: inline-block;
+        border: solid;
+        border-color: #dddddd;
+        width: 318px;
+        margin-left: 3px;
+        height: 120px;
+    }
+
+    .Dashboard {
+        width: 97%;
+    }
+
+    .TotalAmount {
+        border-radius: 15px;
+        background: #1e90ff;
+        display: inline-block;
+        width: 318px;
+        border: solid;
+        margin-left: 4px;
+        border-color: #dddddd;
+        height: 120px;
+    }
+
+    .AssignedClaim {
+        border-radius: 15px;
+        background: #1e90ff;
+        border: solid;
+        border-color: #dddddd;
+        width: 318px;
+        margin-left: 300px;
+        display: inline-block;
+        height: 120px;
+    }
+
+    .UnAssignedClaim {
+        border-radius: 15px;
+        background: #1e90ff;
+        border: solid;
+        border-color: #dddddd;
+        width: 318px;
+        display: inline-block;
+        height: 120px;
+        margin-left: 0px;
+    }
+
+    .NoOfInttimation .IntimationHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .TurnArroundTime .TurnArroundTimeHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .SattlementYear .SattlementYearHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .TotalAmount .TotalAmountHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .Amount .AmountHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .OutstandingClaim .OutstandingClaimHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .AssignedClaim .AssignedClaimHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .UnAssignedClaim .UnAssignedClaimHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .IntimationHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .TurnArroundTimeHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .SattlementYearHeadingData h3 {
+        text-decoration: none;
+        font-size: xx-large;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .AmountHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .AssignedClaimHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .UnAssignedClaimHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .TotalAmountHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .OutstandingClaimHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+}
+
+@media only screen and (min-width: 1360px) {
+
+
+    body {
+    }
+
+    .header {
+        width: 100%;
+        background-color: white;
+        border-bottom: solid;
+        border-color: green;
+        height: 142px;
+    }
+
+
+    .logo {
+        display: -webkit-inline-box;
+        width: 10%;
+    }
+
+    .footer {
+        width: 100%;
+        background-color: white;
+        border: solid;
+        border-color: green;
+        height: 120px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+    }
+
+    li {
+        float: left;
+    }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            li a:hover {
+                background-color: #30793a;
+            }
+
+
+
+    .fontshow {
+        display: block;
+        margin-top: 20px;
+        padding-left: 454px;
+    }
+
+        .fontshow li {
+            float: left;
+            margin: 9px;
+        }
+
+    .Searching {
+        display: -webkit-inline-box;
+    }
+
+    .GridHeader {
+        color: Black;
+        border-top: solid;
+        border-top-width: 13px;
+        border-color: green;
+        font-family: "Times New Roman", Times, serif;
+        font-size: large;
+    }
+
+
+    .btn {
+        border: none;
+        outline: none;
+        padding: 5px 16px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+    }
+
+        Style the active class, and buttons on mouse-over .active, .btn:hover {
+            color: black;
+            border-bottom: solid;
+            border-bottom-color: green;
+        }
+
+    .menuBar {
+        display: inline-table;
+        margin-left: 381px;
+        font-family: "Times New Roman", Times, serif;
+        font-size: large;
+    }
+
+        .menuBar li {
+            width: 120px;
+        }
+
+            .menuBar li span {
+                background-color: #969696;
+            }
+
+
+
+
+    .pagination-ys {
+        display: inline-block;
+        padding-left: 0;
+        margin: 20px 0;
+        border-radius: 4px;
+    }
+
+        .pagination-ys table > tbody > tr > td {
+            display: inline;
+        }
+
+            .pagination-ys table > tbody > tr > td > a,
+            .pagination-ys table > tbody > tr > td > span {
+                position: relative;
+                float: left;
+                padding: 8px 12px;
+                line-height: 1.42857143;
+                text-decoration: none;
+                color: green;
+                background-color: #ffffff;
+                border: 1px solid #dddddd;
+                margin-left: -1px;
+            }
+
+            .pagination-ys table > tbody > tr > td > span {
+                position: relative;
+                float: left;
+                padding: 8px 12px;
+                line-height: 1.42857143;
+                text-decoration: none;
+                margin-left: -1px;
+                z-index: 2;
+                color: #aea79f;
+                background-color: #f5f5f5;
+                border-color: #dddddd;
+                cursor: default;
+            }
+
+            .pagination-ys table > tbody > tr > td:first-child > a,
+            .pagination-ys table > tbody > tr > td:first-child > span {
+                margin-left: 0;
+                border-bottom-left-radius: 4px;
+                border-top-left-radius: 4px;
+            }
+
+            .pagination-ys table > tbody > tr > td:last-child > a,
+            .pagination-ys table > tbody > tr > td:last-child > span {
+                border-bottom-right-radius: 4px;
+                border-top-right-radius: 4px;
+            }
+
+            .pagination-ys table > tbody > tr > td > a:hover,
+            .pagination-ys table > tbody > tr > td > span:hover,
+            .pagination-ys table > tbody > tr > td > a:focus,
+            .pagination-ys table > tbody > tr > td > span:focus {
+                color: #97310e;
+                background-color: #eeeeee;
+                border-color: #dddddd;
+            }
+
+
+    .Background {
+        background-color: Black;
+        filter: alpha(opacity=90);
+        opacity: 0.8;
+    }
+
+    .Popup {
+        background-color: #FFFFFF;
+        border-width: 3px;
+        border-style: solid;
+        border-color: black;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        width: 900px;
+        height: 500px;
+    }
+
+    .lbl {
+        font-size: 16px;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .GridShow {
+        margin-left: 10px;
+    }
+
+    .GridPager a, .GridPager span {
+        display: block;
+        height: 24px;
+        width: 24px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .GridPager a {
+        background-color: #f5f5f5;
+        color: #969696;
+        border: 1px solid #969696;
+    }
+
+    .GridPager span {
+        background-color: #81d374;
+        color: #000;
+        border: 1px solid #3AC0F2;
+    }
+
+    .h1 {
+        font-size: x-large;
+        text-decoration: none;
+        font-style: italic;
+    }
+
+    .SearchBy {
+        font-family: "Times New Roman", Times, serif;
+        font-size: large;
+    }
+
+    Home StyleSheet Start .Dashboard {
+    }
+
+    .Dashboard h1 {
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 42px;
+        font-size: x-large;
+        color: black;
+    }
+
+    .NoOfInttimation {
+        background-color: #1e90ff;
+        width: 368px;
+        height: 120px;
+        display: inline-block;
+        margin-left: 84px;
+        border: solid;
+        border-color: #dddddd;
+        border-radius: 15px;
+    }
+
+    .TurnArroundTime {
+        background-color: #1e90ff;
+        width: 368px;
+        height: 120px;
+        display: inline-block;
+        border: solid;
+        margin-left: 37px;
+        border-color: #dddddd;
+        border-radius: 15px;
+    }
+
+    .SattlementYear {
+        background-color: #1e90ff;
+        width: 368px;
+        height: 120px;
+        display: inline-block;
+        margin-left: -15px;
+        border-radius: 15px;
+        border: solid;
+        border-color: #dddddd;
+    }
+
+    .divSpace {
+        width: 100%;
+        margin-top: -17px;
+    }
+
+    .Amount {
+        background-color: #1e90ff;
+        width: 368px;
+        height: 120px;
+        display: inline-block;
+        margin-left: 84px;
+        border-radius: 15px;
+        border: solid;
+        border-color: #dddddd;
+    }
+
+    .OutstandingClaim {
+        border-radius: 15px;
+        background: #1e90ff;
+        display: inline-block;
+        border: solid;
+        border-color: #dddddd;
+        width: 368px;
+        margin-left: 39px;
+        height: 120px;
+    }
+
+    .Dashboard {
+        width: 97%;
+    }
+
+    .TotalAmount {
+        border-radius: 15px;
+        background: #1e90ff;
+        display: inline-block;
+        width: 368px;
+        border: solid;
+        margin-left: -13px;
+        border-color: #dddddd;
+        height: 120px;
+    }
+
+    .AssignedClaim {
+        border-radius: 15px;
+        background: #1e90ff;
+        border: solid;
+        border-color: #dddddd;
+        width: 368px;
+        margin-left: 292px;
+        display: inline-block;
+        height: 120px;
+    }
+
+    .UnAssignedClaim {
+        border-radius: 15px;
+        background: #1e90ff;
+        border: solid;
+        border-color: #dddddd;
+        width: 368px;
+        display: inline-block;
+        height: 120px;
+        margin-left: 239px;
+    }
+
+    .NoOfInttimation .IntimationHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .TurnArroundTime .TurnArroundTimeHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .SattlementYear .SattlementYearHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .TotalAmount .TotalAmountHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .Amount .AmountHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .OutstandingClaim .OutstandingClaimHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .AssignedClaim .AssignedClaimHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .UnAssignedClaim .UnAssignedClaimHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .IntimationHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .TurnArroundTimeHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .SattlementYearHeadingData h3 {
+        text-decoration: none;
+        font-size: xx-large;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .AmountHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .AssignedClaimHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .UnAssignedClaimHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .TotalAmountHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .OutstandingClaimHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+
+
+    .panel-body h3 {
+    font-size: 15px;
+    color: grey;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    display: contents;
+}
+    .wrapper  .btn {
+    border: none;
+    outline: none;
+    padding: 5px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    margin-top: 10px;
+}
+      .wrapper .panel-default {
+        width: auto;
+        height: auto;
+        border-bottom: solid;
+        border-bottom-width: 10px;
+        border-bottom-color: green;
+    }
+
+    body {
+    }
+
+    .header {
+        width: 100%;
+        background-color: white;
+        border-bottom: solid;
+        border-color: green;
+        height: 142px;
+    }
+
+    .logo {
+        display: -webkit-inline-box;
+        width: 10%;
+    }
+
+    .footer {
+        width: 100%;
+        background-color: white;
+        border: solid;
+        border-color: green;
+        height: 120px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+    }
+
+    li {
+        float: left;
+    }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            li a:hover {
+                background-color: #30793a;
+            }
+
+
+
+    .fontshow {
+        display: inline-block;
+        padding-left: 70px;
+    }
+
+        .fontshow li {
+            float: left;
+            margin: 9px;
+        }
+
+    .Searching {
+        display: -webkit-inline-box;
+    }
+
+    .GridHeader {
+        color: Black;
+        border-top: solid;
+        border-top-width: 13px;
+        border-color: green;
+        font-family: "Times New Roman", Times, serif;
+        font-size: large;
+    }
+
+
+    .btn {
+        border: none;
+        outline: none;
+        padding: 5px 16px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+    }
+
+        Style the active class, and buttons on mouse-over .active, .btn:hover {
+            color: black;
+            border-bottom: solid;
+            border-bottom-color: green;
+        }
+
+    .menuBar {
+        display: inline-table;
+        margin-left: 132px;
+        font-family: "Times New Roman", Times, serif;
+        font-size: large;
+    }
+
+        .menuBar li {
+            width: 120px;
+        }
+
+            .menuBar li span {
+                background-color: #969696;
+            }
+
+
+
+
+    .pagination-ys {
+        display: inline-block;
+        padding-left: 0;
+        margin: 20px 0;
+        border-radius: 4px;
+    }
+
+        .pagination-ys table > tbody > tr > td {
+            display: inline;
+        }
+
+            .pagination-ys table > tbody > tr > td > a,
+            .pagination-ys table > tbody > tr > td > span {
+                position: relative;
+                float: left;
+                padding: 8px 12px;
+                line-height: 1.42857143;
+                text-decoration: none;
+                color: green;
+                background-color: #ffffff;
+                border: 1px solid #dddddd;
+                margin-left: -1px;
+            }
+
+            .pagination-ys table > tbody > tr > td > span {
+                position: relative;
+                float: left;
+                padding: 8px 12px;
+                line-height: 1.42857143;
+                text-decoration: none;
+                margin-left: -1px;
+                z-index: 2;
+                color: #aea79f;
+                background-color: #f5f5f5;
+                border-color: #dddddd;
+                cursor: default;
+            }
+
+            .pagination-ys table > tbody > tr > td:first-child > a,
+            .pagination-ys table > tbody > tr > td:first-child > span {
+                margin-left: 0;
+                border-bottom-left-radius: 4px;
+                border-top-left-radius: 4px;
+            }
+
+            .pagination-ys table > tbody > tr > td:last-child > a,
+            .pagination-ys table > tbody > tr > td:last-child > span {
+                border-bottom-right-radius: 4px;
+                border-top-right-radius: 4px;
+            }
+
+            .pagination-ys table > tbody > tr > td > a:hover,
+            .pagination-ys table > tbody > tr > td > span:hover,
+            .pagination-ys table > tbody > tr > td > a:focus,
+            .pagination-ys table > tbody > tr > td > span:focus {
+                color: #97310e;
+                background-color: #eeeeee;
+                border-color: #dddddd;
+            }
+
+
+    .Background {
+        background-color: Black;
+        filter: alpha(opacity=90);
+        opacity: 0.8;
+    }
+
+    .Popup {
+        background-color: #FFFFFF;
+        border-width: 3px;
+        border-style: solid;
+        border-color: black;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        width: 900px;
+        height: 500px;
+    }
+
+    .lbl {
+        font-size: 16px;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .GridShow {
+        margin-left: 10px;
+    }
+
+    .GridPager a, .GridPager span {
+        display: block;
+        height: 24px;
+        width: 24px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .GridPager a {
+        background-color: #f5f5f5;
+        color: #969696;
+        border: 1px solid #969696;
+    }
+
+    .GridPager span {
+        background-color: #81d374;
+        color: #000;
+        border: 1px solid #3AC0F2;
+    }
+
+    .h1 {
+        font-size: x-large;
+        text-decoration: none;
+        font-style: italic;
+    }
+
+    .SearchBy {
+        font-family: "Times New Roman", Times, serif;
+        font-size: large;
+    }
+
+    Home StyleSheet Start .Dashboard {
+    }
+
+    .Dashboard h1 {
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 42px;
+        font-size: x-large;
+        color: black;
+    }
+
+    .NoOfInttimation {
+        background-color: #1e90ff;
+        width: 316px;
+        margin-left: 13px;
+        height: 120px;
+        display: inline-block;
+        border: solid;
+        border-color: #dddddd;
+        border-radius: 15px;
+    }
+
+    .TurnArroundTime {
+        background-color: #1e90ff;
+        width: 316px;
+        margin-left: 13px;
+        height: 120px;
+        display: inline-block;
+        border: solid;
+        border-color: #dddddd;
+        border-radius: 15px;
+    }
+
+    .SattlementYear {
+        background-color: #1e90ff;
+        width: 316px;
+        margin-left: 13px;
+        height: 120px;
+        display: inline-block;
+        border-radius: 15px;
+        border: solid;
+        border-color: #dddddd;
+    }
+
+    .divSpace {
+        width: 100%;
+        margin-top: -17px;
+    }
+
+    .Amount {
+        background-color: #1e90ff;
+        width: 316px;
+        margin-left: 13px;
+        height: 120px;
+        display: inline-block;
+        border-radius: 15px;
+        margin-top: 11px;
+        border: solid;
+        border-color: #dddddd;
+    }
+
+    .OutstandingClaim {
+        border-radius: 15px;
+        background: #1e90ff;
+        display: inline-block;
+        border: solid;
+        border-color: #dddddd;
+        width: 316px;
+        margin-left: 13px;
+        height: 120px;
+    }
+
+    .Dashboard {
+        width: 97%;
+    }
+
+    .TotalAmount {
+        border-radius: 15px;
+        background: #1e90ff;
+        display: inline-block;
+        width: 316px;
+        margin-left: 13px;
+        border: solid;
+        border-color: #dddddd;
+        margin-top: 0px;
+        height: 120px;
+    }
+
+    .AssignedClaim {
+        border-radius: 15px;
+        background: #1e90ff;
+        border: solid;
+        border-color: #dddddd;
+        width: 316px;
+        margin-left: 13px;
+        display: inline-block;
+        height: 120px;
+    }
+
+    .UnAssignedClaim {
+        border-radius: 15px;
+        background: #1e90ff;
+        border: solid;
+        border-color: #dddddd;
+        width: 316px;
+        margin-left: 13px;
+        display: inline-block;
+        height: 120px;
+    }
+
+    .NoOfInttimation .IntimationHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .TurnArroundTime .TurnArroundTimeHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .SattlementYear .SattlementYearHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .TotalAmount .TotalAmountHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .Amount .AmountHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .OutstandingClaim .OutstandingClaimHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .AssignedClaim .AssignedClaimHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .UnAssignedClaim .UnAssignedClaimHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .IntimationHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .TurnArroundTimeHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .SattlementYearHeadingData h3 {
+        text-decoration: none;
+        font-size: xx-large;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .AmountHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .AssignedClaimHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .UnAssignedClaimHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .TotalAmountHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .OutstandingClaimHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+}
+
+@media only screen and (min-width: 728px) {
+    .wrapper  .btn {
+    border: none;
+    outline: none;
+    padding: 5px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+     .wrapper .panel-default {
+        width: auto;
+        height: auto;
+        border-bottom: solid;
+        border-bottom-width: 10px;
+        border-bottom-color: green;
+    }
+
+
+    body {
+    }
+
+    .header {
+        width: 100%;
+        background-color: white;
+        border-bottom: solid;
+        border-color: green;
+        height: 142px;
+    }
+
+    .logo {
+        display: -webkit-inline-box;
+        width: 10%;
+    }
+
+    .footer {
+        width: 100%;
+        background-color: white;
+        border: solid;
+        border-color: green;
+        height: 120px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+    }
+
+    li {
+        float: left;
+    }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            li a:hover {
+                background-color: #30793a;
+            }
+
+
+
+    .fontshow {
+        display: inline-block;
+        padding-left: 35px;
+    }
+
+        .fontshow li {
+            float: left;
+            margin: 9px;
+        }
+
+    .Searching {
+        display: -webkit-inline-box;
+    }
+
+    .GridHeader {
+        color: Black;
+        border-top: solid;
+        border-top-width: 13px;
+        border-color: green;
+        font-family: "Times New Roman", Times, serif;
+        font-size: large;
+    }
+
+
+    .btn {
+        border: none;
+        outline: none;
+        padding: 5px 16px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+    }
+
+        Style the active class, and buttons on mouse-over .active, .btn:hover {
+            color: black;
+            border-bottom: solid;
+            border-bottom-color: green;
+        }
+
+    .menuBar {
+        display: inline-table;
+        margin-left: 225px;
+        font-family: "Times New Roman", Times, serif;
+        font-size: large;
+    }
+
+        .menuBar li {
+            width: 120px;
+        }
+
+            .menuBar li span {
+                background-color: #969696;
+            }
+
+
+
+
+    .pagination-ys {
+        display: inline-block;
+        padding-left: 0;
+        margin: 20px 0;
+        border-radius: 4px;
+    }
+
+        .pagination-ys table > tbody > tr > td {
+            display: inline;
+        }
+
+            .pagination-ys table > tbody > tr > td > a,
+            .pagination-ys table > tbody > tr > td > span {
+                position: relative;
+                float: left;
+                padding: 8px 12px;
+                line-height: 1.42857143;
+                text-decoration: none;
+                color: green;
+                background-color: #ffffff;
+                border: 1px solid #dddddd;
+                margin-left: -1px;
+            }
+
+            .pagination-ys table > tbody > tr > td > span {
+                position: relative;
+                float: left;
+                padding: 8px 12px;
+                line-height: 1.42857143;
+                text-decoration: none;
+                margin-left: -1px;
+                z-index: 2;
+                color: #aea79f;
+                background-color: #f5f5f5;
+                border-color: #dddddd;
+                cursor: default;
+            }
+
+            .pagination-ys table > tbody > tr > td:first-child > a,
+            .pagination-ys table > tbody > tr > td:first-child > span {
+                margin-left: 0;
+                border-bottom-left-radius: 4px;
+                border-top-left-radius: 4px;
+            }
+
+            .pagination-ys table > tbody > tr > td:last-child > a,
+            .pagination-ys table > tbody > tr > td:last-child > span {
+                border-bottom-right-radius: 4px;
+                border-top-right-radius: 4px;
+            }
+
+            .pagination-ys table > tbody > tr > td > a:hover,
+            .pagination-ys table > tbody > tr > td > span:hover,
+            .pagination-ys table > tbody > tr > td > a:focus,
+            .pagination-ys table > tbody > tr > td > span:focus {
+                color: #97310e;
+                background-color: #eeeeee;
+                border-color: #dddddd;
+            }
+
+
+    .Background {
+        background-color: Black;
+        filter: alpha(opacity=90);
+        opacity: 0.8;
+    }
+
+    .Popup {
+        background-color: #FFFFFF;
+        border-width: 3px;
+        border-style: solid;
+        border-color: black;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        width: 900px;
+        height: 500px;
+    }
+
+    .lbl {
+        font-size: 16px;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .GridShow {
+        margin-left: 10px;
+    }
+
+    .GridPager a, .GridPager span {
+        display: block;
+        height: 24px;
+        width: 24px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .GridPager a {
+        background-color: #f5f5f5;
+        color: #969696;
+        border: 1px solid #969696;
+    }
+
+    .GridPager span {
+        background-color: #81d374;
+        color: #000;
+        border: 1px solid #3AC0F2;
+    }
+
+    .h1 {
+        font-size: x-large;
+        text-decoration: none;
+        font-style: italic;
+    }
+
+    .SearchBy {
+        font-family: "Times New Roman", Times, serif;
+        font-size: large;
+    }
+
+    Home StyleSheet Start .Dashboard {
+    }
+
+    .Dashboard h1 {
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 42px;
+        font-size: x-large;
+        color: black;
+    }
+
+    .NoOfInttimation {
+        background-color: #1e90ff;
+        width: 318px;
+        height: 120px;
+        display: inline-block;
+        margin-left: 14px;
+        border: solid;
+        border-color: #dddddd;
+        border-radius: 15px;
+    }
+
+    .TurnArroundTime {
+        background-color: #1e90ff;
+        width: 318px;
+        height: 120px;
+        display: inline-block;
+        border: solid;
+        margin-left: 10px;
+        border-color: #dddddd;
+        border-radius: 15px;
+    }
+
+    .SattlementYear {
+        background-color: #1e90ff;
+        width: 318px;
+        height: 120px;
+        display: inline-block;
+        margin-left: 4px;
+        border-radius: 15px;
+        border: solid;
+        border-color: #dddddd;
+    }
+
+    .divSpace {
+        width: 100%;
+        margin-top: -17px;
+    }
+
+    .Amount {
+        background-color: #1e90ff;
+        width: 318px;
+        height: 120px;
+        display: inline-block;
+        margin-left: 17px;
+        border-radius: 15px;
+        border: solid;
+        border-color: #dddddd;
+    }
+
+    .OutstandingClaim {
+        border-radius: 15px;
+        background: #1e90ff;
+        display: inline-block;
+        border: solid;
+        border-color: #dddddd;
+        width: 318px;
+        margin-left: 11px;
+        height: 120px;
+    }
+
+    .Dashboard {
+        width: 97%;
+    }
+
+    .TotalAmount {
+        border-radius: 15px;
+        background: #1e90ff;
+        display: inline-block;
+        width: 318px;
+        border: solid;
+        margin-left: 4px;
+        border-color: #dddddd;
+        height: 120px;
+    }
+
+    .AssignedClaim {
+        border-radius: 15px;
+        background: #1e90ff;
+        border: solid;
+        border-color: #dddddd;
+        width: 318px;
+        margin-left: 240px;
+        display: inline-block;
+        height: 120px;
+    }
+
+    .UnAssignedClaim {
+        border-radius: 15px;
+        background: #1e90ff;
+        border: solid;
+        border-color: #dddddd;
+        width: 318px;
+        display: inline-block;
+        height: 120px;
+        margin-left: 226px;
+    }
+
+    .NoOfInttimation .IntimationHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .TurnArroundTime .TurnArroundTimeHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .SattlementYear .SattlementYearHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .TotalAmount .TotalAmountHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .Amount .AmountHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .OutstandingClaim .OutstandingClaimHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .AssignedClaim .AssignedClaimHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .UnAssignedClaim .UnAssignedClaimHeading h3 {
+        font-size: x-large;
+        color: white;
+        border-left: solid;
+        border-color: green;
+        border-width: thick;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 45px;
+    }
+
+    .IntimationHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .TurnArroundTimeHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .SattlementYearHeadingData h3 {
+        text-decoration: none;
+        font-size: xx-large;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .AmountHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .AssignedClaimHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .UnAssignedClaimHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .TotalAmountHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+
+    .OutstandingClaimHeadingData h3 {
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 120px;
+    }
+}
+
+
+
+/* Intimation and settlement Stylesheet Start*/
+
+
+
+@media screen and (min-width:992px)  and (max-width:1366px){
+
+    .panel-body .rowBorder {
+        width: 100%;
+        height: 30px;
+        border-bottom: inset;
+    }
+  .panel-body .glyphicon{
+      position: relative;
+    top: 1px;
+    margin-left: 13px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    }
+
+    .panel-body .Box {
+        width: 100%;
+        height: 264px;
+    }
+
+    .panel-body label {
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    .panel-body h3 {
+        font-size: 15px;
+        color: grey;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        display: contents;
+    }
+
+    .panel-body h1 {
+        font-size: 18px;
+        color: grey;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        font-stretch: condensed;
+    }
+
+    body {
+        padding: 50px;
+        background: #fff;
+    }
+
+    .panel-body {
+        padding: 15px;
+        padding-top: 0px;
+    }
+
+
+    .wrapper {
+        width: 70%;
+    }
+
+    .panel-group .panel-body {
+        padding: 15px;
+        padding-top: 0px;
+    }
+
+
+    .panel-group .panel {
+        margin-bottom: 0;
+        border-radius: 4px;
+    }
+
+        .panel-group .panel + .panel {
+            margin-top: 5px;
+        }
+
+    .panel-group .panel-heading {
+        border-bottom: 0;
+    }
+
+        .panel-group .panel-heading + .panel-collapse > .list-group, .panel-group .panel-heading + .panel-collapse > .panel-body {
+            border-top: 1px solid #ddd;
+        }
+
+    .panel-group .panel-footer {
+        border-top: 0;
+    }
+
+        .panel-group .panel-footer + .panel-collapse .panel-body {
+            border-bottom: 1px solid #ddd;
+        }
+
+    .wrapper .panel-default {
+        width: 300px;
+        height: auto;
+        border-bottom: solid;
+        border-bottom-width: 10px;
+        border-bottom-color: green;
+    }
+
+    @media(max-width:992px) {
+        .wrapper {
+            width: 100%;
+        }
+    }
+
+    .panel-heading {
+        padding: 0;
+        border: 0;
+    }
+
+    .panel-title > a, .panel-title > a:active {
+        display: block;
+        padding: 15px;
+        color: #555;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+        text-decoration: none;
+    }
+
+    .panel-heading a:before {
+        font-family: 'Glyphicons Halflings';
+        content: "\e114";
+        float: right;
+        transition: all 0.5s;
+    }
+
+    .panel-heading.active a:before {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+
+
+
+
+
+
+
+    /* Intimation and settlement Stylesheet End*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*Email Template Start*/
+
+    .habiblogo h1 {
+        font-size: x-large;
+        font-family: "Times New Roman", Times, serif;
+        display: inline-block;
+        text-decoration: none;
+        color: green;
+        margin-left: -62px;
+        margin-top: 64px;
+    }
+
+
+    .subjectName h1 {
+        font-size: large;
+        font-family: "Times New Roman", Times, serif;
+        display: inline-block;
+        margin-left: 60px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    .Message p {
+        font-family: "Times New Roman", Times, serif;
+        display: inline-block;
+        margin-left: 60px;
+        color: black;
+        font-size: larger;
+        text-decoration: none;
+    }
+
+    .Message a {
+        font-family: "Times New Roman", Times, serif;
+        display: inline-block;
+        color: blue;
+        text-decoration: none;
+        font-size: large;
+    }
+
+    .CopyRight {
+        margin-left: 60px;
+        color: black;
+        border-top: solid;
+        border-color: gray;
+        border-top-width: thin;
+        border-top-style: outset;
+        text-decoration: none;
+        margin-top: 108px;
+    }
+
+    .CopyRightParagraph {
+        font-family: "Times New Roman", Times, serif;
+        font-size: larger;
+        text-decoration: none;
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+    .sideBorder {
+        border-left: solid;
+        margin-top: 12px;
+        color: green;
+        border-left-width: 60px;
+    }
+
+
+/*Email Template End*/
+
+

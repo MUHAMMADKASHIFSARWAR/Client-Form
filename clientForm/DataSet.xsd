@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet" targetNamespace="http://tempuri.org/DataSet.xsd" xmlns:mstns="http://tempuri.org/DataSet.xsd" xmlns="http://tempuri.org/DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Web.config)" ParameterPrefix=":" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="Oracle.ManagedDataAccess.Client" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BWPREMTableAdapter" GeneratorDataComponentClassName="BWPREMTableAdapter" Name="BWPREM" UserDataComponentName="BWPREMTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Web.config)" DbObjectName="HIL.HICL_BW_PRE" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT BRANCH, PG_PREMIUM, AG_PREMIUM, PROJECTION_PRICE, ACTUAL_PRICE, JAN_JUNE2017, JUNE2017, BRANCH_TYPE FROM HIL.HICL_BW_PRE</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BRANCH" DataSetColumn="BRANCH" />
+              <Mapping SourceColumn="PG_PREMIUM" DataSetColumn="PG_PREMIUM" />
+              <Mapping SourceColumn="AG_PREMIUM" DataSetColumn="AG_PREMIUM" />
+              <Mapping SourceColumn="PROJECTION_PRICE" DataSetColumn="PROJECTION_PRICE" />
+              <Mapping SourceColumn="ACTUAL_PRICE" DataSetColumn="ACTUAL_PRICE" />
+              <Mapping SourceColumn="JAN_JUNE2017" DataSetColumn="JAN_JUNE2017" />
+              <Mapping SourceColumn="JUNE2017" DataSetColumn="JUNE2017" />
+              <Mapping SourceColumn="BRANCH_TYPE" DataSetColumn="BRANCH_TYPE" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataSet" msprop:Generator_UserDSName="DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BWPREM" msprop:Generator_TableClassName="BWPREMDataTable" msprop:Generator_TableVarName="tableBWPREM" msprop:Generator_TablePropName="BWPREM" msprop:Generator_RowDeletingName="BWPREMRowDeleting" msprop:Generator_RowChangingName="BWPREMRowChanging" msprop:Generator_RowEvHandlerName="BWPREMRowChangeEventHandler" msprop:Generator_RowDeletedName="BWPREMRowDeleted" msprop:Generator_UserTableName="BWPREM" msprop:Generator_RowChangedName="BWPREMRowChanged" msprop:Generator_RowEvArgName="BWPREMRowChangeEvent" msprop:Generator_RowClassName="BWPREMRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BRANCH" msprop:Generator_ColumnVarNameInTable="columnBRANCH" msprop:Generator_ColumnPropNameInRow="BRANCH" msprop:Generator_ColumnPropNameInTable="BRANCHColumn" msprop:Generator_UserColumnName="BRANCH" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PG_PREMIUM" msprop:Generator_ColumnVarNameInTable="columnPG_PREMIUM" msprop:Generator_ColumnPropNameInRow="PG_PREMIUM" msprop:Generator_ColumnPropNameInTable="PG_PREMIUMColumn" msprop:Generator_UserColumnName="PG_PREMIUM" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AG_PREMIUM" msprop:Generator_ColumnVarNameInTable="columnAG_PREMIUM" msprop:Generator_ColumnPropNameInRow="AG_PREMIUM" msprop:Generator_ColumnPropNameInTable="AG_PREMIUMColumn" msprop:Generator_UserColumnName="AG_PREMIUM" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PROJECTION_PRICE" msprop:Generator_ColumnVarNameInTable="columnPROJECTION_PRICE" msprop:Generator_ColumnPropNameInRow="PROJECTION_PRICE" msprop:Generator_ColumnPropNameInTable="PROJECTION_PRICEColumn" msprop:Generator_UserColumnName="PROJECTION_PRICE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ACTUAL_PRICE" msprop:Generator_ColumnVarNameInTable="columnACTUAL_PRICE" msprop:Generator_ColumnPropNameInRow="ACTUAL_PRICE" msprop:Generator_ColumnPropNameInTable="ACTUAL_PRICEColumn" msprop:Generator_UserColumnName="ACTUAL_PRICE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JAN_JUNE2017" msprop:Generator_ColumnVarNameInTable="columnJAN_JUNE2017" msprop:Generator_ColumnPropNameInRow="JAN_JUNE2017" msprop:Generator_ColumnPropNameInTable="JAN_JUNE2017Column" msprop:Generator_UserColumnName="JAN_JUNE2017" type="xs:decimal" minOccurs="0" />
+              <xs:element name="JUNE2017" msprop:Generator_ColumnVarNameInTable="columnJUNE2017" msprop:Generator_ColumnPropNameInRow="JUNE2017" msprop:Generator_ColumnPropNameInTable="JUNE2017Column" msprop:Generator_UserColumnName="JUNE2017" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BRANCH_TYPE" msprop:Generator_ColumnVarNameInTable="columnBRANCH_TYPE" msprop:Generator_ColumnPropNameInRow="BRANCH_TYPE" msprop:Generator_ColumnPropNameInTable="BRANCH_TYPEColumn" msprop:Generator_UserColumnName="BRANCH_TYPE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PREM" msprop:Generator_ColumnVarNameInTable="columnPREM" msprop:Generator_ColumnPropNameInRow="PREM" msprop:Generator_ColumnPropNameInTable="PREMColumn" msprop:Generator_UserColumnName="PREM" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetNew" targetNamespace="http://tempuri.org/DataSetNew.xsd" xmlns:mstns="http://tempuri.org/DataSetNew.xsd" xmlns="http://tempuri.org/DataSetNew.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetNew" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetNew" msprop:Generator_UserDSName="DataSetNew">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Premium" msprop:Generator_TableClassName="PremiumDataTable" msprop:Generator_TableVarName="tablePremium" msprop:Generator_RowChangedName="PremiumRowChanged" msprop:Generator_TablePropName="Premium" msprop:Generator_RowDeletingName="PremiumRowDeleting" msprop:Generator_RowChangingName="PremiumRowChanging" msprop:Generator_RowEvHandlerName="PremiumRowChangeEventHandler" msprop:Generator_RowDeletedName="PremiumRowDeleted" msprop:Generator_RowClassName="PremiumRow" msprop:Generator_UserTableName="Premium" msprop:Generator_RowEvArgName="PremiumRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BRANCH" msprop:Generator_ColumnVarNameInTable="columnBRANCH" msprop:Generator_ColumnPropNameInRow="BRANCH" msprop:Generator_ColumnPropNameInTable="BRANCHColumn" msprop:Generator_UserColumnName="BRANCH" type="xs:string" minOccurs="0" />
+              <xs:element name="PG_PREMIUM" msprop:Generator_ColumnVarNameInTable="columnPG_PREMIUM" msprop:Generator_ColumnPropNameInRow="PG_PREMIUM" msprop:Generator_ColumnPropNameInTable="PG_PREMIUMColumn" msprop:Generator_UserColumnName="PG_PREMIUM" type="xs:string" minOccurs="0" />
+              <xs:element name="AG_PREMIUM" msprop:Generator_ColumnVarNameInTable="columnAG_PREMIUM" msprop:Generator_ColumnPropNameInRow="AG_PREMIUM" msprop:Generator_ColumnPropNameInTable="AG_PREMIUMColumn" msprop:Generator_UserColumnName="AG_PREMIUM" type="xs:string" minOccurs="0" />
+              <xs:element name="PROJECTION_PRICE" msprop:Generator_ColumnVarNameInTable="columnPROJECTION_PRICE" msprop:Generator_ColumnPropNameInRow="PROJECTION_PRICE" msprop:Generator_ColumnPropNameInTable="PROJECTION_PRICEColumn" msprop:Generator_UserColumnName="PROJECTION_PRICE" type="xs:string" minOccurs="0" />
+              <xs:element name="ACTUAL_PRICE" msprop:Generator_ColumnVarNameInTable="columnACTUAL_PRICE" msprop:Generator_ColumnPropNameInRow="ACTUAL_PRICE" msprop:Generator_ColumnPropNameInTable="ACTUAL_PRICEColumn" msprop:Generator_UserColumnName="ACTUAL_PRICE" type="xs:string" minOccurs="0" />
+              <xs:element name="JAN_JUNE2017" msprop:Generator_ColumnVarNameInTable="columnJAN_JUNE2017" msprop:Generator_ColumnPropNameInRow="JAN_JUNE2017" msprop:Generator_ColumnPropNameInTable="JAN_JUNE2017Column" msprop:Generator_UserColumnName="JAN_JUNE2017" type="xs:string" minOccurs="0" />
+              <xs:element name="JUNE2017" msprop:Generator_ColumnVarNameInTable="columnJUNE2017" msprop:Generator_ColumnPropNameInRow="JUNE2017" msprop:Generator_ColumnPropNameInTable="JUNE2017Column" msprop:Generator_UserColumnName="JUNE2017" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_TYPE" msprop:Generator_ColumnVarNameInTable="columnBRANCH_TYPE" msprop:Generator_ColumnPropNameInRow="BRANCH_TYPE" msprop:Generator_ColumnPropNameInTable="BRANCH_TYPEColumn" msprop:Generator_UserColumnName="BRANCH_TYPE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

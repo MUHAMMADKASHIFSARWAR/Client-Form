@@ -1,0 +1,228 @@
+ CREATE OR REPLACE Procedure GetADC
+   (
+    ToDate nvarchar2,
+     FromDate nvarchar2,
+     clientCode nvarchar2,
+     zonecode  nvarchar2,
+    -- clientType nvarchar2,
+     branchCode nvarchar2,
+    -- branchType nvarchar2,
+     DeptCode nvarchar2,
+     BusClass nvarchar2,
+         prc out sys_refcursor      
+            )
+                 
+        is
+              begin
+              
+                         open prc for 
+select distinct  b.PLC_LOCACODE,a.GDH_BASEDOCUMENTNO,A.PPS_PARTY_CODE,PDP_DEPTDESC,ITD.GIH_ITEMNO,BC.PBC_DESC, a.GDH_AS400_DOCUMENTNO,
+case when a.GDH_INDIVIDUAL_CLIENT is null then PT.PPS_DESC else a.GDH_INDIVIDUAL_CLIENT  end as GDH_INDIVIDUAL_CLIENT,
+--a.GDH_INDIVIDUAL_CLIENT,
+
+
+ITD.GID_CHASISNO,
+
+ITD.GID_ENGINENO,ITD.GID_NIC_NO,ITD.GID_REGISTRATION,a.plc_loc_code,a.pdt_doctype,a.gdh_documentno,
+
+a.pdp_dept_code,a.gdh_year,plc_desc Branch, a.gdh_doc_reference_no,a.pdp_dept_code,dept.PDP_DEPTDESC dept,
+
+ 
+
+   to_date(a.GDH_ISSUEDATE, 'dd/mm/yyy')ISSUEDate,
+
+to_date(a.gdh_commdate, 'dd/mm/yyy') COMDT,
+
+       to_date(a.gdh_expirydate, 'dd/mm/yyy') EXPDT, 
+
+       CASE
+
+          WHEN NVL(ggd_sharetag, 'N') = 'Y'
+
+             THEN ITH.GIH_GROSSPREMIUM
+
+          ELSE ITH.GIH_GROSSPREMIUM
+
+       END AS gdh_grosspremium,
+
+       CASE
+
+          WHEN NVL(ggd_sharetag, 'N') = 'Y'
+
+             THEN gcd_netpremium
+
+          ELSE a.gdh_netpremium
+
+       END AS gdh_netpremium,
+
+        a.gdh_posting_tag, pdt_desc,
+        ITH.GIH_TOTAL_SI GDH_TotalSI
+        
+              
+
+  FROM gi_gu_dh_doc_header a
+  left outer join(select distinct PBC_BUSICLASS_CODE,PBC_DESC from PR_GG_BC_BUSINESS_CLASS) BC on (BC.PBC_BUSICLASS_CODE=a.PBC_BUSICLASS_CODE)
+  left outer join(select distinct PDP_DEPTCODE, PDP_DEPTDESC from PR_GN_DP_DEPARTMENT)dept on(a.pdp_dept_code = dept.PDP_DEPTCODE)
+
+ 
+left outer join PR_GN_PS_PARTY PT on PT.PPS_PARTY_CODE=a.pps_party_code
+ left outer join GI_GU_IH_ITEM_HEADER ITH on(
+
+        a.plc_loc_code = ITH.PLC_LOC_CODE
+
+        AND a.pdp_dept_code =  ITH.pdp_dept_code
+
+        AND A.PBC_BUSICLASS_CODE=ITH.PBC_BUSICLASS_CODE
+
+        AND A.PIY_INSUTYPE=ITH.PIY_INSUTYPE
+
+        AND a.gdh_documentno = ITH.gdh_documentno
+
+        AND A.GDH_RECORD_TYPE=ITH.GDH_RECORD_TYPE
+
+        AND a.pdt_doctype = ITH.pdt_doctype
+
+        AND a.GDH_YEAR =ITH.GDH_YEAR
+
+        )
+
+ inner join GI_GU_ID_ITEM_DETAIL ITD on
+ (
+
+         a.plc_loc_code = ITD.PLC_LOC_CODE
+
+        AND ITH.pdp_dept_code =  ITD.pdp_dept_code
+
+        AND ITH.PBC_BUSICLASS_CODE=ITD.PBC_BUSICLASS_CODE
+
+        AND ITH.PIY_INSUTYPE=ITD.PIY_INSUTYPE
+
+        AND ITH.gdh_documentno = ITD.gdh_documentno
+
+        AND ITH.GDH_RECORD_TYPE=ITD.GDH_RECORD_TYPE
+
+        AND ITH.pdt_doctype = ITD.pdt_doctype
+
+        AND ITH.GDH_YEAR =ITD.GDH_YEAR
+
+        AND ITD.GIH_ITEMNO=ITH.GIH_ITEMNO
+
+  )
+
+ 
+
+  
+  
+  LEFT OUTER JOIN gi_gu_cd_coinsurerdtl coin
+
+       ON(a.por_org_code = coin.por_org_code
+
+           AND a.plc_loc_code = coin.plc_loc_code
+
+           AND a.pdp_dept_code = coin.pdp_dept_code
+
+           AND a.pbc_busiclass_code = coin.pbc_busiclass_code
+
+           AND a.piy_insutype = coin.piy_insutype
+
+           AND a.pdt_doctype = coin.pdt_doctype
+
+           AND a.gdh_documentno = coin.gdh_documentno
+
+           AND a.gdh_record_type = coin.gdh_record_type
+
+           AND a.gdh_year = coin.gdh_year
+
+           AND gcd_leadertag = 'Y'
+
+          )
+
+       ,
+
+       gi_gu_gd_generaldtl gendetail,
+
+       pr_gn_lc_location b,
+
+       pr_gg_dt_documenttype c       
+        
+   
+
+   
+WHERE 
+  
+      regexp_like (a.pdp_dept_code,DeptCode)
+     AND a.GDH_RECORD_TYPE =CASE WHEN (SELECT COUNT(GDH_DOC_REFERENCE_NO) FROM GI_GU_DH_DOC_HEADER WHERE GDH_DOC_REFERENCE_NO=a.gdh_doc_reference_no) > 1 THEN 'C' ELSE 'O' END
+     AND regexp_like (a.pps_party_code,clientCode)
+     AND regexp_like (BC.PBC_BUSICLASS_CODE,BusClass)
+    AND regexp_like (a.PLC_LOC_CODE,branchCode)
+   AND a.GDH_ISSUEDATE between  FromDate and ToDate
+   AND regexp_like (GDH_AS400_DOCUMENTNO,zonecode)
+   AND a.GDH_POSTING_TAG ='Y'
+   AND a.pdt_doctype IN('P')
+    AND a.por_org_code = gendetail.por_org_code
+   AND a.plc_loc_code = gendetail.plc_loc_code
+   AND a.pdp_dept_code = gendetail.pdp_dept_code
+   AND a.pbc_busiclass_code = gendetail.pbc_busiclass_code
+   AND a.piy_insutype = gendetail.piy_insutype
+   AND a.pdt_doctype = gendetail.pdt_doctype
+   AND a.gdh_documentno = gendetail.gdh_documentno
+   AND a.gdh_record_type = gendetail.gdh_record_type
+   AND a.gdh_year = gendetail.gdh_year
+   AND a.por_org_code = b.por_orgacode
+   AND a.plc_loc_code = b.plc_locacode
+   AND a.pdt_doctype = c.pdt_doctype
+   --AND a.plc_loc_code = '10104'
+ -- AND case when a.pdp_dept_code NOT IN('12') then a.gdh_expirydate  else a.gdh_commdate  end >= (sysdate)
+   
+   and not exists (
+   SELECT 'x'
+  FROM gi_gu_el_endorse_logbookhd c
+ WHERE por_org_code = '001001'
+   AND gel_basedocumentno =a.gdh_doc_reference_no
+   AND gdh_year || gdh_documentno =
+          (SELECT MAX (b.gdh_year || b.gdh_documentno)
+             FROM gi_gu_dh_doc_header a, gi_gu_el_endorse_logbookhd b
+            WHERE a.por_org_code = '001001'
+              AND b.gel_basedocumentno = c.gel_basedocumentno
+              AND b.ped_endotype IN ('DC', 'DR')
+              AND a.por_org_code = b.por_org_code
+              AND a.plc_loc_code = b.plc_loc_code
+              AND a.pdp_dept_code = b.pdp_dept_code
+              AND a.pbc_busiclass_code = b.pbc_busiclass_code
+              AND a.pdt_doctype = b.pdt_doctype
+              AND a.piy_insutype = b.piy_insutype
+              AND a.gdh_documentno = b.gdh_documentno
+              AND a.gdh_record_type = b.gdh_record_type
+              AND a.gdh_year = b.gdh_year
+              AND a.gdh_cancellation_tag IS NULL
+              AND NVL (gdh_posting_tag, 'N') = 'Y')
+              
+)
+Group by  a.GDH_BASEDOCUMENTNO,A.PPS_PARTY_CODE,PDP_DEPTDESC,ITD.GIH_ITEMNO,BC.PBC_DESC, a.GDH_AS400_DOCUMENTNO,
+a.GDH_INDIVIDUAL_CLIENT,ITD.GID_CHASISNO,
+ITD.GID_ENGINENO,ITD.GID_NIC_NO,ITD.GID_REGISTRATION,a.plc_loc_code,a.pdt_doctype,a.gdh_documentno,
+ to_date(a.GDH_ISSUEDATE, 'dd/mm/yyy'),
+ to_date(a.gdh_commdate, 'dd/mm/yyy'),
+       to_date(a.gdh_expirydate, 'dd/mm/yyy'), a.gdh_totalsi,
+       CASE
+          WHEN NVL(ggd_sharetag, 'N') = 'Y'
+             THEN GIH_GROSSPREMIUM
+          ELSE GIH_GROSSPREMIUM
+       END,
+       CASE
+          WHEN NVL(ggd_sharetag, 'N') = 'Y'
+             THEN gcd_netpremium
+          ELSE a.gdh_netpremium
+       END,
+        a.gdh_posting_tag, pdt_desc,
+  
+a.pdp_dept_code,a.gdh_year,plc_desc , a.gdh_doc_reference_no,a.pdp_dept_code,dept.PDP_DEPTDESC,ITH.GIH_GROSSPREMIUM,
+ a.GDH_TOTALSI, itd.GIH_ITEMNO, itd.PMK_MAKE_CODE ,  itd.GID_CHASISNO, itd.GID_ENGINENO, itd.GID_MODEL, ITH.GIH_TOTAL_SI, ggd_sharetag,PT.PPS_DESC,b.PLC_LOCACODE
+order by GDH_DOC_REFERENCE_NO desc
+   ;
+
+ 
+ 
+  
+end;
+/

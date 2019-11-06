@@ -1,0 +1,592 @@
+﻿body {
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.NavBar {
+    width: 100%;
+    height: 52px;
+    background-color: green;
+}
+
+    .NavBar a {
+        color: white;
+        font-size: large;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+.header img {
+    width: 162px;
+    height: 105px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.header h1 {
+    font-size: x-large;
+    color: green;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    display: inline-block;
+}
+
+.NavBar label {
+    font-size: large;
+    margin-top: 5px;
+    color: white;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    display: inline-block;
+}
+
+.NavBar h1 {
+    font-size: initial;
+    margin-top: 5px;
+    color: white;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    margin-left: 13px;
+    display: inline-block;
+}
+
+.NavBar .navbar-nav {
+    margin: 7.5px -15px;
+    margin-left: 50px;
+}
+
+    .NavBar .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 20px;
+    }
+
+@media (min-width:768px) {
+    .NavBar .navbar-nav {
+        float: left;
+        margin: 0;
+        margin-left: 20px;
+    }
+
+        .NavBar .navbar-nav > li {
+            float: left;
+        }
+
+            .NavBar .navbar-nav > li > a {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+}
+
+
+@media (min-width:377px) {
+    .NavBar .navbar-nav {
+        float: left;
+        margin: 0;
+    }
+
+        .NavBar .navbar-nav > li {
+            float: left;
+        }
+
+            .NavBar .navbar-nav > li > a {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+}
+
+
+
+
+/*Overview Stylesheet start*/
+
+.imgProfile {
+    width: 100%;
+    height: 288px;
+    background-color: #DCDCDC;
+}
+
+    .imgProfile h1 {
+        font-size: 15px;
+        margin-top: 10px;
+        font-weight: bold;
+        color: #006400;
+        text-decoration: none;
+        font-family: "Arial";
+        margin-left: 13px;
+        display: inline-block;
+    }
+
+    .imgProfile p {
+        font-size: 15px;
+        color: black;
+        text-decoration: none;
+        font-family: "Arial";
+        margin-left: 13px;
+        display: inline-block;
+    }
+
+
+.panel-body span {
+    font-size: 80px;
+    margin-left: 120px;
+}
+
+.panel-heading span {
+    margin-top: -32px;
+    font-size: 15px;
+    margin-right: -12px;
+}
+
+.clickable {
+    background: rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.panel-heading h1 {
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #006400;
+    text-decoration: none;
+    font-family: "Arial";
+    text-align: center;
+    margin-left: 100px;
+    display: inline-block;
+}
+
+.panel-body h1 {
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: gray;
+    text-decoration: none;
+    font-family: "Arial";
+    display: inline-block;
+}
+
+.panel-body h2 {
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #006400;
+    text-decoration: none;
+    font-family: "Arial";
+    display: inline-block;
+}
+
+.panel-body p {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    font-family: Arial;
+    display: inline-block;
+}
+
+.panel-body button {
+    background-color: #006400; /* Green */
+    border: none;
+    width: 180px;
+    height: 35px;
+    color: white;
+    margin-left: 68px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button1 {
+    border-radius: 2px;
+}
+
+.imgClaim {
+    width: 100%;
+    height: 288px;
+    background-color: #DCDCDC;
+}
+
+    .imgClaim h1 {
+        font-size: 15px;
+        margin-top: 10px;
+        font-weight: bold;
+        color: #006400;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 13px;
+        display: inline-block;
+    }
+
+    .imgClaim p {
+        font-size: 15px;
+        color: black;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 13px;
+        display: inline-block;
+    }
+
+.imgProfile img {
+    height: 190px;
+    width: 100%;
+}
+
+.imgClaim img {
+    height: 190px;
+    width: 100%;
+}
+
+.imgPrivacy {
+    width: 100%;
+    height: 288px;
+    background-color: #DCDCDC;
+}
+
+    .imgPrivacy img {
+        height: 190px;
+        width: 100%;
+    }
+
+    .imgPrivacy h1 {
+        font-size: 15px;
+        margin-top: 10px;
+        font-weight: bold;
+        color: #006400;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 13px;
+        display: inline-block;
+    }
+
+    .imgPrivacy p {
+        font-size: 15px;
+        color: black;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 13px;
+        display: inline-block;
+    }
+/*Overview Stylesheet End*/
+
+
+
+
+
+
+
+/*View Profile Stylesheet Start*/
+.ViewProfileHeading {
+    width: 100%;
+    border-bottom: solid;
+    border-bottom-color: gray;
+}
+
+    .ViewProfileHeading h1 {
+        font-size: 18px;
+        margin-top: 5px;
+        font-weight: bold;
+        color: gray;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 13px;
+        display: inline-block;
+    }
+
+
+.ViewProfile .panel-heading h1 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #006400;
+    text-decoration: none;
+    font-family: "Arial";
+    display: inline-block;
+}
+
+.ViewProfile .panel-body label {
+    font-size: 17px;
+    text-decoration: none;
+    font-family: "Arial";
+    display: inline-block;
+}
+
+.ViewProfile .panel-default {
+    border-color: #ddd;
+    height: 230px;
+}
+
+.EditButton .button {
+    background-color: #006400; /* Green */
+    border: none;
+    width: 180px;
+    height: 35px;
+    color: white;
+    margin-left: 68px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.button2 {
+    border-radius: 2px;
+}
+
+.content {
+    margin: 0px 50px 0px 50px;
+}
+
+
+    .content h1 {
+        font-size: 25px;
+        margin-top: 5px;
+        margin-left: 408px;
+        font-weight: bold;
+        color: #006400;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 351px;
+        display: inline-block;
+    }
+
+    .content h2 {
+        font-size: 18px;
+        margin-top: 5px;
+        font-weight: bold;
+        color: #006400;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+       
+        display: inline-block;
+    }
+     .content .labelAMl {
+        font-size: 18px;
+        margin-top: 5px;
+        font-weight: bold;
+        color: #006400;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+       
+        display: inline-block;
+    }
+
+
+    .btnAdd {
+    height: 44px;
+    width: 136px;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+    background: #006400;
+    margin-left: 350px border: 0;
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+   
+    color: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    text-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+     .btnAdd:hover {
+        opacity: 0.6;
+        color: #fff;
+    }
+
+   .btnAdd:active {
+        outline: 0;
+        opacity: 0.6;
+        color: #fff;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+   .btnAdd:focus {
+        outline: 0;
+        opacity: 0.6;
+        background: #19b9e7;
+        color: #fff;
+    }
+
+    .btnAdd:active:focus, button.btn.active:focus {
+        outline: 0;
+        opacity: 0.6;
+        background: #19b9e7;
+        color: #fff;
+    }
+        .PolDetail .Box {
+        width: 100%;
+        height: 318px;
+        margin-top: -10px;
+    }
+
+        .PolDetail .scrollable0panel {
+    max-height: 300px;
+    overflow: auto;
+}
+        @media (min-width:300px) {
+    .ViewProfile .panel-default {
+        border-color: #ddd;
+        height: auto;
+    }
+
+    .PolDetail .Box {
+        width: 100%;
+        height: auto;
+        margin-top: -10px;
+    }
+}
+        .PolDetail .HEadGrid {
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+}
+        .PolDetail .ItemGridHead label {
+    font-size: 11px;
+    font-weight: bold;
+    color: black;
+    color: black;
+    margin-top: 5px;
+    margin-left: 0px;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+}
+        .PolDetail .ItemGridHead label {
+    font-size: 11px;
+    font-weight: bold;
+    color: black;
+    color: black;
+    margin-top: 5px;
+    margin-left: 0px;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+}
+        .PolDetail .Boxlabelnew {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    /* color: grey; */
+    margin-top: 0px;
+    margin-left: 92px;
+    text-decoration: none;
+    /* font-family: cursive; */
+}
+
+.PolDetail .DetailPanel {
+    margin-left: 100px;
+}.PolDetail a {
+    color: #428bca;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+}.PolDetail .BoxlabelClaim {
+    margin-left: 88px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    /* color: grey; */
+    margin-top: 0px;
+    text-decoration: none;
+    /* font-family: cursive; */
+}
+
+
+.clientForm .panel-group .panel {
+    margin-bottom: 0;
+    /* height: 296px; */
+    border-bottom: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: #006400;
+    border-radius: 4px;
+}
+.clientForm .panel-group .panel {
+    margin-bottom: 0;
+    /* height: 296px; */
+    border-bottom: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: #006400;
+    border-radius: 4px;
+}
+.clientForm .Box {
+    width: 100%;
+       height: 261px;
+    margin-top: -10px;
+    /*overflow: auto;
+    overflow-x: hidden;*/
+}  .clientForm .Box h3 {
+        font-size: 13px;
+        font-weight: bold;
+        color: black;
+        color: black;
+        margin-top: 5px;
+        margin-left: 0px;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+    }
+.clientForm .Boxlabel {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    /* color: grey; */
+    margin-top: 0px;
+    margin-left: 0px;
+    text-decoration: none;
+    /* font-family: cursive; */
+} .clientForm .panel-heading span {
+    margin-top: -3px;
+    font-size: 15px;
+    margin-right: -12px;
+}
+
+  .clientForm h1 {
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+        color: #006400;
+        margin-top: 5px;
+        margin-left: 0px;
+        text-decoration: none;
+        font-family: "Times New Roman", Times, serif;
+    }
+/*View Profile Stylesheet End*/
+.clientForm .Box1 {
+    width: 100%;
+  height: 180px;
+    margin-top: -10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.PolicyButton {
+    background-color: #006400;
+    border: none;
+    width: 250px;
+    height: 30px;
+    color: white;
+    border-radius: 6px;
+    margin-left: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}

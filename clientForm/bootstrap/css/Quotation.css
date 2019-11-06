@@ -1,0 +1,35 @@
+﻿body {
+    
+
+
+}
+
+.Quotation h1 {
+    font-size: 16px;
+      margin-top: -2px;
+          margin-left: -17px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    color: #006400;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 600;
+}
+ .Quotation label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    float: left;
+      font-family: "Times New Roman", Times, serif;
+}
+  .Quotation .lbllabel {
+  display: inline-block;
+    max-width: 100%;
+    margin-left: 10px;
+    color: darkgray;
+    margin-bottom: 5px;
+    font-weight: 700; 
+     font-family: "Times New Roman", Times, serif;
+    float: left;
+}

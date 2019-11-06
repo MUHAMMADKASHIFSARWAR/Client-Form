@@ -1,0 +1,56 @@
+    ---------  jquery------------
+
+       var ajax_data = {
+                chasisNo: ChasisNo
+            };
+            $.ajax({
+                type: "GET",
+                contentType: "application/json; charset=utf-8",
+                url: "api/ClientPortal/GetChasisNo",
+                data: ajax_data,
+                dataType: "json",
+                success: function (data) {
+                   
+                },
+                error: function (result) {
+                    alert("No Match");
+                }
+            });
+
+
+
+
+----------API method -------------
+
+  string constr = System.Configuration.ConfigurationManager.AppSettings["DashBoard"];
+
+
+         [HttpGet]
+        [Route("api/ClientPortal/GetChasisNo")]
+        public HttpResponseMessage GetChasisNo(string chasisNo)
+        {
+            DataSet ds = new DataSet();
+            using (OracleConnection objConn = new OracleConnection(constr))
+            {
+                OracleCommand objCmd = new OracleCommand();
+
+                objCmd.Connection = objConn;
+                objCmd.CommandText = "GetChasisNo";
+                objCmd.CommandType = CommandType.StoredProcedure;
+                objCmd.Parameters.Add("chasisNo", OracleDbType.NVarchar2).Value = chasisNo;
+                objCmd.Parameters.Add("PRC", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+                try
+                {
+                    objConn.Open();
+                    OracleDataAdapter da = new OracleDataAdapter(objCmd);
+                    da.Fill(ds);
+                }
+                catch (Exception ex)
+                {
+                    System.Console.WriteLine("Exception: {0}", ex.ToString());
+                }
+                objConn.Close();
+            }
+            return Request.CreateResponse(HttpStatusCode.OK, ds.Tables[0]);
+
+        }
